@@ -87,20 +87,20 @@
             opacity: 0.8;
         }
 
-        .hero {
-            background: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663396939517/bSETqMuQyBc3XtwtBFVTXf/almarwah-hero-banner-7h2tiK6pk6p5y35aPxgecU.webp') center;
-            color: var(--white);
-            min-height: 400px;
-        }
+      .hero {
+    background: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663396939517/bSETqMuQyBc3XtwtBFVTXf/almarwah-hero-banner-7h2tiK6pk6p5y35aPxgecU.webp') center/cover no-repeat;
+    color: var(--white);
+    min-height: 500px;
+    display: flex;
+    align-items: flex-end;   /* Push content to bottom */
+    justify-content: center;
+    padding: 60px 20px;      /* Smaller padding */
+}
 
-      .hero-content {
+  .hero-content {
     max-width: 800px;
-    margin: -80px auto 60px auto; /* pulls it slightly up toward image */
-    /* background: #ffffff; */
-    padding: 40px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin-bottom: 40px;  /* Space above Our Menu */
+    padding: 30px;
 }
 
         .hero h1 {
