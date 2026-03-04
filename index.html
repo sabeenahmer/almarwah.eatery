@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Al Marwah Eatery</title>
-   <link rel="icon" type="image/png" href="AL MARWAH ROUND LOGO STICKER-03.png">
+    <title>Al Marwah Eatery - Frozen Food Delivery Karachi</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+     <link rel="icon" type="image/png" href="AL MARWAH ROUND LOGO STICKER-03.png">
     <style>
         * {
             margin: 0;
@@ -20,6 +20,7 @@
             --light-gray: #f8f8f8;
             --dark-gray: #333333;
             --text-gray: #666666;
+            --nav-bg: #f0f0f0;
         }
 
         body {
@@ -29,10 +30,11 @@
             line-height: 1.6;
         }
 
+        /* HEADER & NAVIGATION */
         header {
             background: linear-gradient(135deg, var(--primary-red) 0%, var(--dark-red) 100%);
             color: var(--white);
-            padding: 20px 0;
+            padding: 15px 0;
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -46,48 +48,84 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            /* flex-direction: row-reverse; */
-
+            flex-direction: row-reverse;
         }
 
         .logo {
             font-family: 'Poppins', sans-serif;
-            font-size: 28px;
+            font-size: 24px;
             font-weight: 700;
             display: flex;
             align-items: center;
-            gap: 10px;
-            width: 40px;
-            height: 40px;
-            justify-content: center;
-
+            gap: 12px;
+            color: var(--white);
         }
 
-        /* .logo-icon {
-            width: 40px;
-            height: 40px;
-            background: var(--white);
-            border-radius: 50%;
+        .logo img {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        nav {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--primary-red);
-            font-weight: bold;
-        } */
+            gap: 30px;
+        }
 
         nav a {
             color: var(--white);
             text-decoration: none;
-            margin-left: 30px;
             font-weight: 500;
             transition: opacity 0.3s;
+            font-size: 16px;
         }
 
         nav a:hover {
             opacity: 0.8;
         }
 
-    .hero { background: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663396939517/bSETqMuQyBc3XtwtBFVTXf/almarwah-hero-banner-7h2tiK6pk6p5y35aPxgecU.webp') center/cover; color: var(--white); padding: 120px 20px; text-align: center; min-height: 400px; display: flex; align-items: center; justify-content: center; } .hero-content { max-width: 800px; margin: 0 0; /* background: rgba(0, 0, 0, 0.3); */ padding: 40px; /* border-radius: 12px; */ /* backdrop-filter: blur(5px); */ } .hero h1 { font-family: 'Poppins', sans-serif; font-size: 48px; font-weight: 700; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); } .hero p { font-size: 18px; margin-bottom: 30px; opacity: 0.95; } .delivery-badge { display: inline-block; background: var(--white); color: var(--primary-red); padding: 12px 24px; border-radius: 50px; font-weight: 600; margin-bottom: 30px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); } .cta-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; } .btn { padding: 12px 30px; border: none; border-radius: 50px; font-weight: 600; cursor: pointer; transition: all 0.3s; font-size: 16px; text-decoration: none; display: inline-block; } .btn-primary { background: var(--white); color: var(--primary-red); } .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); } .btn-secondary { background: transparent; color: var(--white); border: 2px solid var(--white); } .btn-secondary:hover { background: var(--white); color: var(--primary-red); } .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        /* HERO SECTION - BANNER */
+        .hero {
+            background: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663396939517/bSETqMuQyBc3XtwtBFVTXf/almarwah-banner-clean-KnvzS8qgwLQTXGqrs6U2V7.webp') center/cover no-repeat;
+            height: 450px;
+            width: 100%;
+        }
+
+        /* BRAND HERO SECTION */
+        .brand-hero {
+            background: linear-gradient(135deg, var(--primary-red) 0%, var(--dark-red) 100%);
+            color: var(--white);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .brand-hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .brand-hero h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .brand-hero p {
+            font-size: 18px;
+            line-height: 1.8;
+            opacity: 0.95;
+        }
+
+        /* MENU SECTION */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
         .section {
             padding: 60px 20px;
         }
@@ -185,6 +223,20 @@
             display: inline-block;
         }
 
+        /* DUMMY ITEM */
+        .menu-item.dummy {
+            background: transparent;
+            box-shadow: none;
+            border: none;
+            cursor: default;
+        }
+
+        .menu-item.dummy:hover {
+            transform: none;
+            box-shadow: none;
+        }
+
+        /* CONTACT SECTION */
         .contact-section {
             background: var(--light-gray);
         }
@@ -289,38 +341,140 @@
             color: var(--primary-red);
         }
 
+        /* MOBILE RESPONSIVE */
         @media (max-width: 768px) {
+            /* Mobile Header */
             .header-container {
                 flex-direction: column;
-                gap: 15px;
+                gap: 0;
+                padding: 15px 20px;
+            }
+
+            .logo {
+                font-size: 20px;
+                gap: 10px;
+                margin-bottom: 15px;
+                justify-content: center;
+                width: 100%;
+            }
+
+            .logo img {
+                width: 40px;
+                height: 40px;
             }
 
             nav {
-                display: flex;
-                gap: 15px;
-                flex-wrap: wrap;
+                width: 100%;
+                background: rgba(0, 0, 0, 0.2);
+                padding: 15px 20px;
+                margin: 0 -20px -15px -20px;
                 justify-content: center;
+                gap: 20px;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
             }
 
-            nav a {
-                margin-left: 0;
-            }
-
-            .hero h1 {
+            .brand-hero h2 {
                 font-size: 32px;
             }
 
+            .brand-hero p {
+                font-size: 16px;
+            }
+
+            nav a {
+                font-size: 14px;
+                color: var(--white);
+            }
+
+            /* Mobile Hero */
+            .hero {
+                height: 250px;
+            }
+
+            /* Mobile Menu Grid - 2 columns */
             .menu-grid {
-                grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+
+            .menu-item-image {
+                height: 160px;
+            }
+
+            .menu-item-content {
+                padding: 15px;
+            }
+
+            .menu-item-title {
+                font-size: 16px;
+            }
+
+            .menu-item-description {
+                font-size: 12px;
+                margin-bottom: 10px;
+            }
+
+            .price {
+                font-size: 18px;
+            }
+
+            .section-title {
+                font-size: 28px;
+                margin-bottom: 30px;
+            }
+
+            .category-title {
+                font-size: 20px;
+            }
+
+            .section {
+                padding: 40px 20px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
                 gap: 20px;
             }
+        }
 
-            .cta-buttons {
-                flex-direction: column;
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 18px;
             }
 
-            .btn {
-                width: 100%;
+            .logo img {
+                width: 35px;
+                height: 35px;
+            }
+
+            nav {
+                gap: 15px;
+            }
+
+            nav a {
+                font-size: 13px;
+                color: var(--white);
+            }
+
+            .brand-hero h2 {
+                font-size: 28px;
+            }
+
+            .brand-hero p {
+                font-size: 15px;
+            }
+
+            .menu-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+
+            .menu-item-image {
+                height: 140px;
+            }
+
+            .section-title {
+                font-size: 24px;
             }
         }
     </style>
@@ -328,9 +482,11 @@
 <body>
     <!-- Header -->
     <header>
-    <div class="header-container">
+        <div class="header-container">
             <div class="logo">
-                <img src="almarwah logo.png" width="400" height="280">
+                <!-- REPLACE WITH YOUR LOGO IMAGE URL -->
+                <img src="Al Marwah (8).png" alt="Al Marwah Logo">
+                <!-- <span>Al Marwah</span> -->
             </div>
             <nav>
                 <a href="#menu">Menu</a>
@@ -339,17 +495,14 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <!-- <h1>Al Marwah Eatery</h1> -->
-            <!-- <p style="font-size: 24px; margin-bottom: 10px;">الحروة</p> -->
-            <p>Al Marwah Eatery is a Karachi-based cloud kitchen specializing in premium frozen food and authentic Pakistani cuisine. We offer ready-to-cook snacks, ready-to-eat meals, bulk commercial orders, and customized Aftaar boxes for Ramadan. Hygienically prepared, carefully packed, and delivered fresh across Karachi.</p>
-            <div class="delivery-badge">🚚 Delivery Available All Over Karachi</div>
-            <div class="cta-buttons">
-                <a href="#menu" class="btn btn-primary">View Menu</a>
-                <a href="#contact" class="btn btn-secondary">Order Now</a>
-            </div>
+    <!-- Hero Banner -->
+    <section class="hero"></section>
+
+    <!-- Brand Hero Section -->
+    <section class="brand-hero">
+        <div class="brand-hero-content">
+            <h2>Al Marwah Eatery</h2>
+            <p>Authentic Pakistani frozen food, freshly made and frozen to perfection. Delivered right to your doorstep across Karachi. Experience homemade taste with the convenience of frozen meals.</p>
         </div>
     </section>
 
@@ -685,6 +838,9 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- DUMMY ITEM TO MAKE GRID EVEN -->
+                    <div class="menu-item dummy"></div>
                 </div>
             </div>
 
