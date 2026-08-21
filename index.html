@@ -450,6 +450,230 @@
                 height: 250px;
             }
 
+/* =========================================
+   WHAT WE OFFER SECTION
+   ========================================= */
+
+.offers-section {
+    background: #ffffff;
+    padding: 80px 20px;
+}
+
+.offers-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Section Heading */
+
+.offers-heading {
+    max-width: 750px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.offers-heading span {
+    display: block;
+    margin-bottom: 8px;
+
+    color: var(--primary-red);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.offers-heading h2 {
+    margin: 0 0 15px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(30px, 4vw, 42px);
+    line-height: 1.2;
+    font-weight: 700;
+
+    color: var(--black);
+}
+
+.offers-heading p {
+    margin: 0;
+
+    color: #666;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* Cards Grid */
+
+.offers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+
+/* Individual Card */
+
+.offer-card {
+    background: #ffffff;
+
+    border: 1px solid #eeeeee;
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.offer-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+/* 1:1 Image */
+
+.offer-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+.offer-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+.offer-card:hover .offer-image img {
+    transform: scale(1.04);
+}
+
+
+/* Card Content */
+
+.offer-content {
+    padding: 25px 24px 28px;
+}
+
+.offer-content h3 {
+    margin: 0 0 12px;
+
+    color: var(--primary-red);
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+.offer-content p {
+    margin: 0 0 20px;
+
+    color: #555;
+
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* Card Link */
+
+.offer-link {
+    display: inline-block;
+
+    color: var(--primary-red);
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+.offer-link:hover {
+    color: var(--dark-red);
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .offers-section {
+        padding: 65px 20px;
+    }
+
+    .offers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .offers-section {
+        padding: 50px 16px;
+    }
+
+    .offers-heading {
+        margin-bottom: 32px;
+    }
+
+    .offers-heading span {
+        font-size: 12px;
+    }
+
+    .offers-heading h2 {
+        font-size: 30px;
+    }
+
+    .offers-heading p {
+        font-size: 15px;
+        line-height: 1.65;
+    }
+
+    .offers-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .offer-content {
+        padding: 22px 20px 24px;
+    }
+
+    .offer-content h3 {
+        font-size: 20px;
+    }
+
+    .offer-content p {
+        font-size: 15px;
+        line-height: 1.65;
+    }
+
+}
+            
+
             /* Mobile Menu Grid - 2 columns */
             .menu-grid {
                 grid-template-columns: repeat(2, 1fr);
@@ -579,6 +803,106 @@
             our focus remains steadfast on heritage tradition and serviceable design.
         </p>
     </div>
+</section>
+
+    <!-- What We Offer Section -->
+<section class="offers-section">
+
+    <div class="offers-container">
+
+        <div class="offers-heading">
+            <span>WHAT WE DO</span>
+            <h2>We Are Offering</h2>
+            <p>
+                From everyday meals to large-scale requirements, we provide
+                freshly prepared frozen food with flexible ordering options
+                to suit individuals, families, businesses, and events.
+            </p>
+        </div>
+
+        <div class="offers-grid">
+
+            <!-- Individual Orders -->
+            <div class="offer-card">
+
+                <div class="offer-image">
+                    <img src="./individual-order.jpg"
+                         alt="Individual Frozen Food Order">
+                </div>
+
+                <div class="offer-content">
+                    <h3>Individual Orders</h3>
+
+                    <p>
+                        Enjoy premium homemade frozen food conveniently prepared
+                        for individuals and families. Choose from our range of
+                        ready-to-cook snacks and frozen meals, carefully prepared,
+                        packed, and delivered fresh.
+                    </p>
+
+                    <a href="#menu" class="offer-link">
+                        Explore Our Menu →
+                    </a>
+                </div>
+
+            </div>
+
+
+            <!-- Bulk Orders -->
+            <div class="offer-card">
+
+                <div class="offer-image">
+                    <img src="./bulk-order.jpg"
+                         alt="Bulk and Commercial Frozen Food Order">
+                </div>
+
+                <div class="offer-content">
+                    <h3>Bulk & Commercial Orders</h3>
+
+                    <p>
+                        Looking for frozen food in larger quantities? We cater to
+                        restaurants, cafés, retailers, offices, events, and other
+                        businesses with reliable bulk orders and carefully packed
+                        products prepared according to your requirements.
+                    </p>
+
+                    <a href="#contact" class="offer-link">
+                        Request Bulk Order →
+                    </a>
+                </div>
+
+            </div>
+
+
+            <!-- Customized Orders -->
+            <div class="offer-card">
+
+                <div class="offer-image">
+                    <img src="./custom-order.jpg"
+                         alt="Customized Frozen Food Order">
+                </div>
+
+                <div class="offer-content">
+                    <h3>Customized Orders</h3>
+
+                    <p>
+                        Need something specific? We can prepare customized 
+                        food orders based on your preferred items, quantities,
+                        combinations, packaging, and requirements. Tell us what
+                        you need and we will work with you to create it.
+                    </p>
+
+                    <a href="#contact" class="offer-link">
+                        Customize Your Order →
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
     <!-- Menu Section -->
