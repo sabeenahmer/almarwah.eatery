@@ -118,32 +118,36 @@
     display: block;
 }
 
-        /* BRAND HERO SECTION */
-        .brand-hero {
-            background: #EDEDED;
-            color: var(--black);
-            padding: 40px 20px;
-            text-align: center;
-        }
+     /* BRAND HERO SECTION */
+.brand-hero {
+    background: #EDEDED;
+    color: var(--black);
+    padding: clamp(35px, 5vw, 70px) 20px;
+    text-align: center;
+}
 
-        .brand-hero-content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
+.brand-hero-content {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
 
-        .brand-hero h2 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 42px;
-            font-weight: 700;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-        }
+.brand-hero h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1.2;
+    font-weight: 700;
+    margin: 0 0 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
 
-        .brand-hero p {
-            font-size: 18px;
-            line-height: 1.8;
-            opacity: 0.95;
-        }
+.brand-hero p {
+    max-width: 850px;
+    margin: 0 auto;
+    font-size: clamp(15px, 1.5vw, 18px);
+    line-height: 1.75;
+    opacity: 0.95;
+}
 
         /* MENU SECTION */
         .container {
@@ -537,15 +541,21 @@
     <section class="hero">
     <img src="./ChatGPT Image Aug 21, 2026, 03_01_34 AM.png" alt="Al Marwah Eatery">
 </section>
-    
-    <!-- Brand Hero Section -->
-    <section class="brand-hero">
-        <div class="brand-hero-content">
-            <h2>Premium Cloud Kitchen</h2>
-            <p>Serving Karachi and Faisalabad with hygienically prepared ready-to-cook snacks and ready-to-eat meals.
-            As a Pakistan-based cloud kitchen, we specialize in premium, freshly homemade frozen food and authentic cuisine. Whether serving individual customers seeking lifestyle convenience or fulfilling bulk commercial orders, our focus remains steadfast on heritage tradition and serviceable design.</p>
-        </div>
-    </section>
+   <!-- Brand Hero Section -->
+<section class="brand-hero">
+    <div class="brand-hero-content">
+        <h2>Premium Cloud Kitchen</h2>
+
+        <p>
+            Serving Karachi and Faisalabad with hygienically prepared
+            ready-to-cook snacks and ready-to-eat meals. As a Pakistan-based
+            cloud kitchen, we specialize in premium, freshly homemade frozen
+            food and authentic cuisine. Whether serving individual customers
+            seeking lifestyle convenience or fulfilling bulk commercial orders,
+            our focus remains steadfast on heritage tradition and serviceable design.
+        </p>
+    </div>
+</section>
 
     <!-- Menu Section -->
     <section id="menu" class="section">
