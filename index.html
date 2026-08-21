@@ -123,26 +123,27 @@
     border: 0;
 }
 
-     /* BRAND HERO SECTION */
+  /* BRAND HERO SECTION */
 .brand-hero {
     background: #EDEDED;
     color: var(--black);
-    padding: clamp(35px, 5vw, 70px) 20px;
+    padding: 42px 20px;
     text-align: center;
+    margin: 0;
 }
 
 .brand-hero-content {
     width: 100%;
     max-width: 900px;
-    /* margin: 0 auto; */
+    margin: 0 auto;
 }
 
 .brand-hero h2 {
     font-family: 'Poppins', sans-serif;
-    font-size: clamp(28px, 4vw, 42px);
+    font-size: clamp(26px, 4vw, 42px);
     line-height: 1.2;
     font-weight: 700;
-    margin: 0 0 15px;
+    margin: 0 0 16px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -150,10 +151,27 @@
     max-width: 850px;
     margin: 0 auto;
     font-size: clamp(15px, 1.5vw, 18px);
-    line-height: 1.75;
+    line-height: 1.7;
     opacity: 0.95;
 }
 
+@media (max-width: 480px) {
+
+    .brand-hero {
+        padding: 32px 18px 36px;
+    }
+
+    .brand-hero h2 {
+        font-size: 27px;
+        margin-bottom: 14px;
+    }
+
+    .brand-hero p {
+        font-size: 15px;
+        line-height: 1.65;
+    }
+
+}
         /* MENU SECTION */
         .container {
             max-width: 1200px;
