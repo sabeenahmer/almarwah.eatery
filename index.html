@@ -156,32 +156,28 @@ nav a:hover {
 
 .hero {
     width: 100%;
-
     margin: 0 !important;
     padding: 0 !important;
-
-    height: auto !important;
-    min-height: 0 !important;
-
     line-height: 0;
-
     overflow: hidden;
-
     background: #ffffff;
 }
 
-.hero img {
+.hero picture {
     display: block;
-
     width: 100%;
-    height: auto;
+    margin: 0;
+    padding: 0;
+}
 
+.hero-banner {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
     margin: 0 !important;
     padding: 0 !important;
-
     border: 0;
-
-    object-fit: contain;
 }
 
 
@@ -924,65 +920,7 @@ footer p {
 
 
     /* ---------- HERO ---------- */
-
-    /* .hero {
-        width: 100%;
-
-        height: auto !important;
-
-        margin: 0 !important;
-        padding: 0 !important;
-
-        line-height: 0;
-
-        overflow: hidden;
-    }
-
-    .hero img {
-        width: 100%;
-
-        height: auto !important;
-
-        display: block;
-
-        margin: 0 !important;
-        padding: 0 !important;
-    }
- */
-
-/* =========================================================
-   HERO BANNER
-   ========================================================= */
-
-.hero {
-    width: 100%;
-    margin: 0 !important;
-    padding: 0 !important;
-
-    line-height: 0;
-    overflow: hidden;
-
-    background: #ffffff;
-}
-
-.hero picture {
-    display: block;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.hero-banner {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-
-    margin: 0 !important;
-    padding: 0 !important;
-
-    border: 0;
-}
+    /* Hero is responsive through the <picture> element. */
 
     
     /* ---------- BRAND HERO ---------- */
@@ -1308,17 +1246,17 @@ footer p {
         </div>
     </header>
 
-<!-- Hero Banner -->
+    <!-- Hero Banner -->
 <section class="hero">
     <picture>
         <!-- Mobile banner -->
-        <source
-            media="(max-width: 768px)"
+        <source 
+            media="(max-width: 768px)" 
             srcset="./banner mobile.png">
 
         <!-- Desktop banner -->
-        <img
-            src="./banner.png"
+        <img 
+            src="./banner.png" 
             alt="Al Marwah Eatery"
             class="hero-banner">
     </picture>
