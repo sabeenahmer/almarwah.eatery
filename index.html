@@ -950,34 +950,38 @@ footer p {
     }
  */
 
+/* =========================================================
+   HERO BANNER
+   ========================================================= */
+
 .hero {
     width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    line-height: 0;
     overflow: hidden;
+
+    background: #ffffff;
 }
 
 .hero picture {
     display: block;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .hero-banner {
     display: block;
     width: 100%;
+    max-width: 100%;
     height: auto;
-}
 
-    @media (max-width: 768px) {
+    margin: 0 !important;
+    padding: 0 !important;
 
-    .hero {
-        width: 100%;
-    }
-
-    .hero-banner {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
+    border: 0;
 }
 
     
@@ -1304,17 +1308,17 @@ footer p {
         </div>
     </header>
 
-    <!-- Hero Banner -->
+<!-- Hero Banner -->
 <section class="hero">
     <picture>
         <!-- Mobile banner -->
-        <source 
-            media="(max-width: 768px)" 
+        <source
+            media="(max-width: 768px)"
             srcset="./banner mobile.png">
 
         <!-- Desktop banner -->
-        <img 
-            src="./banner.png" 
+        <img
+            src="./banner.png"
             alt="Al Marwah Eatery"
             class="hero-banner">
     </picture>
